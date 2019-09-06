@@ -14,6 +14,6 @@ You are the main protagonist – an UPAESI chief maintenance officer who usually
 
 ## About the Source Code
 
-The source code is available under the [MIT License](license.md). This repo (embedded in the overall project) will be updated any time an update for UE is released. This code originates from the unfinished v3.07 update.
+The source code is available under the [MIT License](LICENSE). This repo (embedded in the overall project) will be updated any time an update for UE is released. This code originates from the unfinished v3.07 update.
 
 The document [Changes For the Future](ChangesForFuture.md) highlights what would be changed if the project was taken out of hiatus.
