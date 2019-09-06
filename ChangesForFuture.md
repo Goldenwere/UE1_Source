@@ -74,7 +74,7 @@ I sat down and analyzed the code for a couple hours between two days (got throug
 ### [SettingsManager](SettingsManager.cs)
 - Use arrays for storing volumes. `_Music`, `_Enviro`, and `_Effects` would be the indices for their respective arrays, and the volumes would be the stored values. If the values remain identical between mixers like they are now, it may be better to use one array instead of three. This would greatly condense and clean `SetAudioFloats()`, and provide a bit of optimization since there wouldn't be conditionals being checked (instead `_mixer.SetFloat("mixer-name", mixer-array[chosen-mixer-setting])`). It would also condense `SetAllAudioFloats()`. In fact it may be better to simply remove `SetAudioFloats()` and rename `SetAllAudioFloats()` to `SetAudioFloats()` to simplify everything
 
-### [SettingsMenuLoader](SettingsMenuLoads.cs)
+### [SettingsMenuLoader](SettingsMenuLoader.cs)
 - Other than some consistency with line-breaks and indenting, no changes seem to need to be made. Possibly move the functions of SettingsManager to this one, move the values of SettingsManager to a GameValues script (see StoreManager for this idea), and essentially delete SettingsManager and rename this one to SettingsManager
 
 ### [StoreManager](StoreManager.cs)
